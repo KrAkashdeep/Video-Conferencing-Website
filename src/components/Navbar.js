@@ -13,7 +13,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="">
+        <div>
           <ul className="font-bold flex items-center gap-5 cursor-pointer">
             <li>About Us</li>
             <li>Product</li>
