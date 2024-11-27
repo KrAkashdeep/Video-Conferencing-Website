@@ -90,15 +90,11 @@ const Room = () => {
 
   return (
     <div className="w-screen h-screen bg-gray-100 flex items-center justify-center">
+      {/* Container for the meeting interface */}
       <div
         ref={roomContainerRef}
-        className="w-full h-full flex items-center justify-center bg-white shadow-md"
-      >
-        {/* Meeting interface renders here */}
-      </div>
-      <div className="sm:hidden fixed bottom-4 text-center text-gray-500 text-sm px-4">
-        For the best experience, rotate your phone to landscape mode.
-      </div>
+        className="w-full h-full flex items-center justify-center bg-white shadow-md sm:max-w-[90%] sm:max-h-[90%] sm:rounded-lg sm:overflow-hidden"
+      ></div>
     </div>
   );
 };
