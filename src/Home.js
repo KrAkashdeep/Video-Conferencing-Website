@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 
 const Home = () => {
   const [RoomCode, setRoomCode] = useState("");
+  const [RoomPass, setRoomPass] = useState("");
   const navigate = useNavigate();
 
   const submitCode = (e) => {
@@ -41,6 +42,19 @@ const Home = () => {
                 placeholder="Enter Room Code"
                 value={RoomCode}
                 onChange={(e) => setRoomCode(e.target.value)}
+                className="py-1.5 md:py-2 px-4 rounded-full max-w-[14rem] mt-2 md:mt-6 outline-0"
+              />
+
+              <label className="text-[30px] md:text-[40px] font-bold pt-4 mt-10">
+                Enter Room Password
+              </label>
+              <input
+                type="text"
+                Style="box-shadow: 1px 1px 2px;"
+                required
+                placeholder="Enter Room password"
+                value={RoomPass}
+                onChange={(e) => setRoomPass(e.target.value)}
                 className="py-1.5 md:py-2 px-4 rounded-full max-w-[14rem] mt-2 md:mt-6 outline-0"
               />
             </div>
