@@ -39,7 +39,7 @@ const Home = () => {
                 onChange={(e) => setRoomCode(e.target.value)}
                 className="py-2 px-4 rounded-full shadow-md max-w-[14rem] w-full mt-4 outline-none"
               />
-              <label className="text-[20px] sm:text-[25px] md:text-[30px] font-bold pt-4 mt-6 text-center">
+              {/* <label className="text-[20px] sm:text-[25px] md:text-[30px] font-bold pt-4 mt-6 text-center">
                 Enter Room Password
               </label>
               <input
@@ -49,7 +49,7 @@ const Home = () => {
                 value={RoomPass}
                 onChange={(e) => setRoomPass(e.target.value)}
                 className="py-2 px-4 rounded-full shadow-md max-w-[14rem] w-full mt-4 outline-none"
-              />
+              /> */}
             </div>
             <button
               type="submit"
